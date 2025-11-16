@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    /* 3 responsive columns that shrink but never get smaller than 150px */
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-template-rows: repeat(3, minmax(300px, 1fr));
+    gap: 10px;
+    border: 1px solid blue;
+}
+
+.box {
+    border: 1px solid lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    background-color: rgb(20, 172, 243);
+}
+
+.box1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+.box2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+.box3 {
+    grid-row: 2;
+    grid-column: 2;
+}
+.box4 {
+    grid-row: 3;
+    grid-column: 3;
+}
